@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">libpermission</string>
+
+    <string name="permission_rationale_dialog_left_str">下次</string>
+    <string name="permission_rationale_dialog_right_str">去打开</string>
+
+    <string name="permission_rationale_dialog_message">该功能需要您打开[%1$s]权限</string>
+
+    <string name="permission_message_unknown">相关</string>
+    <string name="permission_message_storage">手机存储</string>
+    <string name="permission_message_calendar">日历</string>
+    <string name="permission_message_camera">相机</string>
+    <string name="permission_message_contacts">通讯录</string>
+    <string name="permission_message_location">位置信息</string>
+    <string name="permission_message_audio">麦克风</string>
+    <string name="permission_message_phone">电话</string>
+    <string name="permission_message_sensors">身体传感器</string>
+    <string name="permission_message_sms">短信</string>
+</resources>

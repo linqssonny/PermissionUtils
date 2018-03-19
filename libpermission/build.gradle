@@ -1,0 +1,40 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'//添加
+
+android {
+    compileSdkVersion 27
+
+
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 27
+        versionCode 1
+        versionName "0.1.0"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    api 'com.android.support:appcompat-v7:27.1.0'
+}
+
+//添加
+publish {
+    userOrg = 'sonnyjack'//bintray.com用户名
+    groupId = 'com.sonnyjack.permission'//jcenter上的路径
+    artifactId = 'PermissionUtils'//项目名称
+    publishVersion = '0.1.0'//版本号
+    desc = '这是个为Android 6.0权限封装的轻量库'//描述，不重要
+    website = 'https://github.com/linqssonny/PermissionUtils'//网站，不重要；尽量模拟github上的地址，例如我这样的；当然你有地址最好了
+}
